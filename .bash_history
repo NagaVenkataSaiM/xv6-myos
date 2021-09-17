@@ -278,3 +278,110 @@ nano sample.txt
 nano me.txt
 nano dup.c
 nano ccp.c
+ls
+cd cprograms
+ls
+nano exec_fork.c
+clear
+ls
+cd cprograms
+ls
+man 2 pipe
+nano pipe1.c
+gcc pipe1.c -o pipe1
+nano pipe1.c
+gcc pipe1.c -o pipe1
+./pipe1
+clear
+nano pipe2.c
+man 2 exec
+man 3 exec
+nano pipe2.c
+man 3 fork
+nano pipe2.c
+tr
+tr --help
+tr '[a-z]'
+tr '[a-z]' '[A-Z]'
+tr a-z
+tr a-z A-Z
+clear
+ls
+gcc pipe2.c -o pipe2
+./pipe2
+nano sampletextfile.txt
+./pipe2
+ls
+rm sampletextfile.txt
+nano sampletextfile
+./pipe2
+nan pipe2.c
+nano pipe2.c
+clear
+ls
+cd cprograms
+ls
+nano pipe.c
+nano pipe1.c
+cd ..
+git status
+git add -A .
+git commit -m "Added pipe cprograms"
+git push
+ls
+cd cprograms
+man 2 link
+nano link.c
+gcc link.c -o link
+ls
+./link sample.txt sample2.txt
+ls
+man 2 unlink
+nano unlink.c
+gcc unlink.c -o unlink
+ls
+./unlink sample2.txt
+ls
+clear
+man 2 chown
+pwd
+nano chown.c
+gcc chown.c -o chown
+nano chown.c
+gcc chown.c -o chown
+ls
+nano chownfile.txt
+ls
+ls -l chownfile.txt
+./chown chownfile.txt -1 62
+ls -l chownfile.txt
+whoami
+id osd-2000030558
+./chown chownfile.txt 4529 4529
+man 2 chown
+pwd
+./chown /home/osd-cluster1/p-s1/osd-2000030558/cprograms/chownfile.txt 4529 4529
+clear
+id 0sd-2000030558
+id osd-2000030558
+nano mychown.c
+nano chown.c
+gcc chown.c -o chown
+./chown /home/osd-cluster1/p-s1/osd-2000030558/cprograms/chownfile.txt
+ls -l chownfile.txt
+nano chown.c
+gcc chown.c -o chown
+./chown /home/osd-cluster1/p-s1/osd-2000030558/cprograms/chownfile.txt
+adduser nvsai
+nano chown.c
+man 2 chmod
+nano testfile.txt
+nano chmod.c
+gcc chmod.c -o chmod
+nano testfile.txt
+ls -l testfile.txt
+./chmod testfile.txt
+ls -l testfile.txt
+clear
+ls
+tee < cprograms
