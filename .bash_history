@@ -385,3 +385,71 @@ ls -l testfile.txt
 clear
 ls
 tee < cprograms
+ls
+git status
+git add -A
+git status
+git commit -m added "chmod,chown,link,unlink"
+git commit -m "added chmod,chown,link,unlink"
+git push
+ls
+cd cprograms
+ls
+nano pipe1.c
+nano pipe2.c
+./pipe2
+clear
+cd ..
+ls
+clear
+ls
+cd cprograms
+ls
+ls
+cd cprograms
+nano pipe2.c
+ls
+clear
+cd cprograms
+nano signal.c
+gcc signal.c -o signal
+./signal
+sample.txt
+ls
+./signal
+man 3 sigation
+man 3 sigaction
+man 2 stat
+exit
+ls
+./exec_fork /bin/bash ls -l
+exit
+./exec_fork /home ls -l
+echo hello
+./exec_fork /home ls -l
+./exec_fork /bin/bash ls -l
+logout
+cd cprograms
+ls
+./exec_fork ls
+pwd
+./exec_fork /home/osd-cluster1/p-s1/osd-2000030558/cprograms ls
+./exec_fork ls /home/osd-cluster1/p-s1/osd-2000030558/cprograms
+./exec_fork /home/osd-cluster1/p-s1/osd-2000030558/cprograms ls -l
+./exec_fork /bin/bash ls -l
+pwd
+./exec_fork /bin/bash ls -l
+cd cprograms
+ls
+nano lsdir.c
+gcc lsdir.c -o lsdit
+nano lsdir.c
+gcc lsdir.c -o lsdir
+./lsdir
+ls
+mkdir testdir
+./lsdir testdir
+man 2 tee
+cal date
+cal 2002
+exit
