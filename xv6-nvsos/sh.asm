@@ -1790,113 +1790,141 @@ memmove(void *vdst, const void *vsrc, int n)
      dd9:	c3                   	ret    
 
 00000dda <fork>:
+  name: \
+    movl $SYS_ ## name, %eax; \
+    int $T_SYSCALL; \
+    ret
+
+SYSCALL(fork)
      dda:	b8 01 00 00 00       	mov    $0x1,%eax
      ddf:	cd 40                	int    $0x40
      de1:	c3                   	ret    
 
 00000de2 <exit>:
+SYSCALL(exit)
      de2:	b8 02 00 00 00       	mov    $0x2,%eax
      de7:	cd 40                	int    $0x40
      de9:	c3                   	ret    
 
 00000dea <wait>:
+SYSCALL(wait)
      dea:	b8 03 00 00 00       	mov    $0x3,%eax
      def:	cd 40                	int    $0x40
      df1:	c3                   	ret    
 
 00000df2 <pipe>:
+SYSCALL(pipe)
      df2:	b8 04 00 00 00       	mov    $0x4,%eax
      df7:	cd 40                	int    $0x40
      df9:	c3                   	ret    
 
 00000dfa <read>:
+SYSCALL(read)
      dfa:	b8 05 00 00 00       	mov    $0x5,%eax
      dff:	cd 40                	int    $0x40
      e01:	c3                   	ret    
 
 00000e02 <write>:
+SYSCALL(write)
      e02:	b8 10 00 00 00       	mov    $0x10,%eax
      e07:	cd 40                	int    $0x40
      e09:	c3                   	ret    
 
 00000e0a <close>:
+SYSCALL(close)
      e0a:	b8 15 00 00 00       	mov    $0x15,%eax
      e0f:	cd 40                	int    $0x40
      e11:	c3                   	ret    
 
 00000e12 <kill>:
+SYSCALL(kill)
      e12:	b8 06 00 00 00       	mov    $0x6,%eax
      e17:	cd 40                	int    $0x40
      e19:	c3                   	ret    
 
 00000e1a <exec>:
+SYSCALL(exec)
      e1a:	b8 07 00 00 00       	mov    $0x7,%eax
      e1f:	cd 40                	int    $0x40
      e21:	c3                   	ret    
 
 00000e22 <open>:
+SYSCALL(open)
      e22:	b8 0f 00 00 00       	mov    $0xf,%eax
      e27:	cd 40                	int    $0x40
      e29:	c3                   	ret    
 
 00000e2a <mknod>:
+SYSCALL(mknod)
      e2a:	b8 11 00 00 00       	mov    $0x11,%eax
      e2f:	cd 40                	int    $0x40
      e31:	c3                   	ret    
 
 00000e32 <unlink>:
+SYSCALL(unlink)
      e32:	b8 12 00 00 00       	mov    $0x12,%eax
      e37:	cd 40                	int    $0x40
      e39:	c3                   	ret    
 
 00000e3a <fstat>:
+SYSCALL(fstat)
      e3a:	b8 08 00 00 00       	mov    $0x8,%eax
      e3f:	cd 40                	int    $0x40
      e41:	c3                   	ret    
 
 00000e42 <link>:
+SYSCALL(link)
      e42:	b8 13 00 00 00       	mov    $0x13,%eax
      e47:	cd 40                	int    $0x40
      e49:	c3                   	ret    
 
 00000e4a <mkdir>:
+SYSCALL(mkdir)
      e4a:	b8 14 00 00 00       	mov    $0x14,%eax
      e4f:	cd 40                	int    $0x40
      e51:	c3                   	ret    
 
 00000e52 <chdir>:
+SYSCALL(chdir)
      e52:	b8 09 00 00 00       	mov    $0x9,%eax
      e57:	cd 40                	int    $0x40
      e59:	c3                   	ret    
 
 00000e5a <dup>:
+SYSCALL(dup)
      e5a:	b8 0a 00 00 00       	mov    $0xa,%eax
      e5f:	cd 40                	int    $0x40
      e61:	c3                   	ret    
 
 00000e62 <getpid>:
+SYSCALL(getpid)
      e62:	b8 0b 00 00 00       	mov    $0xb,%eax
      e67:	cd 40                	int    $0x40
      e69:	c3                   	ret    
 
 00000e6a <sbrk>:
+SYSCALL(sbrk)
      e6a:	b8 0c 00 00 00       	mov    $0xc,%eax
      e6f:	cd 40                	int    $0x40
      e71:	c3                   	ret    
 
 00000e72 <sleep>:
+SYSCALL(sleep)
      e72:	b8 0d 00 00 00       	mov    $0xd,%eax
      e77:	cd 40                	int    $0x40
      e79:	c3                   	ret    
 
 00000e7a <uptime>:
+SYSCALL(uptime)
      e7a:	b8 0e 00 00 00       	mov    $0xe,%eax
      e7f:	cd 40                	int    $0x40
      e81:	c3                   	ret    
-     e82:	66 90                	xchg   %ax,%ax
-     e84:	66 90                	xchg   %ax,%ax
-     e86:	66 90                	xchg   %ax,%ax
-     e88:	66 90                	xchg   %ax,%ax
+
+00000e82 <getpinfo>:
+SYSCALL(getpinfo)
+     e82:	b8 16 00 00 00       	mov    $0x16,%eax
+     e87:	cd 40                	int    $0x40
+     e89:	c3                   	ret    
      e8a:	66 90                	xchg   %ax,%ax
      e8c:	66 90                	xchg   %ax,%ax
      e8e:	66 90                	xchg   %ax,%ax

@@ -453,3 +453,182 @@ man 2 tee
 cal date
 cal 2002
 exit
+ls
+cd xv6-nvsos
+nano syscall.h
+nano defs.h
+nano user.h
+nano proc.c
+nano sysproc.c
+nano usys.S
+nano syscall.c
+nano getpinfo.c
+nano MAkefile
+nano Makefile
+make qemu-nox
+nano syscall.c
+make qemu-nox
+exit
+ls
+cd xv6-nvsos
+ls
+nano cp.c
+nano Makefile
+make qemu-nox
+nano copy.c
+git status
+git add -A
+git add -A .
+git status
+cd ..
+git add -A .
+git status
+git commit -m "added cp lsdir"
+git push
+ls
+cd xv6-nvsos
+nano mv.c
+nano Makefile
+make qemu-nox
+ls
+cd cprograms
+ls
+nano pipe1.c
+nano pipe2.c
+ls
+cd xv6-nvsos
+ls
+nano convertaA.c
+nano Makefile
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+make qemu-nox
+nano convertaA.c
+nano reverse.c
+nano convertaA.c
+nano reverse.c
+nano Makefile
+make qemu-nox
+nano reverse.c
+make qemu-nox
+nano reverse.c
+make qemu-nox
+ls
+cd xv6-nvsos
+ls
+nano reverse.c
+make qemu-nox
+nano string.c
+ls
+cd xv6-nvsos
+ls
+nano reverse.c
+nano append.c
+make qemu-nox
+ls
+nano Makefile
+make qemu-nox
+nano cat.c
+nano append.c
+make qemu-nox
+nano append.c
+make qemu-nox
+nano append.c
+make qemu-nox
+nano append.c
+cd xv6
+ls
+cd xv6-nvsos
+nano reverse.c
+make qemu-nox
+ls
+cd cprograms
+ls
+cd ..
+ls
+cd xv6-nvsos
+ls
+make qemu-nox
+ls
+nano reverse.c
+make qemu-nox
+nano reverse.c
+make qemu-nox
+nano reverse.c
+ls
+nano reverse.c
+make qemu-nox
+nano reverse.c
+make
+make qemu-nox
+nano reverse.c
+make qemu-nox
+nano reverse.c
+make qemu-nox
+ls
+nano reverse.c
+make qemu-nox
+nano reverse.c
+make qemu-nox
+ls
+nano reverse.c
+ls
+cd xv6-nvsos
+ls
+nano reverse.c
+make qemu-nox
+nano reverse.c
+ls
+cd xv6-nvsos
+ls
+nano checkleapyear.c
+ls
+cd cprograms
+ls
+cd ..
+ls
+cd xv6-nvsos
+ls
+nano checkleapyear.c
+nano Makefile
+make qemu-nox
+nano checkleapyear.c
+make qemu-nox
+nano checkleapyear.c
+make qemu-nox
+nano checkleapyear.c
+make qemu-nox
+ls
+cd xv6-nvsos
+ls
+make qemu-nox
+nano copy.c
+make qemu-nox
+nano checkleapyear.c
+make qemu-nox

@@ -11,11 +11,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 cp.c
-000016a0 buf.1366
+000016a0 buf.1368
 00000000 ulib.c
 00000000 printf.c
 00000dd0 printint
-00001329 digits.1354
+00001329 digits.1356
 00000000 umalloc.c
 000018a0 freep
 000018a4 base
@@ -30,6 +30,7 @@
 000010f0 malloc
 00000db2 sleep
 000004b0 cp_ls
+00000dc2 getpinfo
 00000d32 pipe
 00000d42 write
 00000d7a fstat

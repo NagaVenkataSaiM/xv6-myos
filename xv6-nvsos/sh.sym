@@ -12,11 +12,11 @@
 00000000 .debug_loc
 00000000 .debug_ranges
 00000000 sh.c
-00001940 buf.1392
+00001940 buf.1394
 00000000 ulib.c
 00000000 printf.c
 00000e90 printint
-00001397 digits.1354
+00001397 digits.1356
 00000000 umalloc.c
 000019a4 freep
 000019a8 base
@@ -36,6 +36,7 @@
 000011b0 malloc
 00000e72 sleep
 00001930 whitespace
+00000e82 getpinfo
 00000190 fork1
 00000a90 nulterminate
 00000df2 pipe
